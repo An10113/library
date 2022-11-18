@@ -14,7 +14,13 @@ nav {
     height: 70px;
     display: flex;
 }
+h1{
+    font-size: 48px;
 
+}
+h2{
+    font-size: 32px;
+}
 .nav__container {
     display: flex;
     justify-content: space-between;
@@ -53,4 +59,13 @@ background-color: rgba(115, 66, 214,0.1);
 }
 header{
     height: calc(100vh - 70px);
+}
+.container{
+    display: flex;
+    align-items: center;justify-content: center;
+}
+.row{
+    width: 100%;
+    max-width: 900px;
+
 }
