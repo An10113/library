@@ -57,15 +57,34 @@ h2{
 #landing{
 background-color: rgba(115, 66, 214,0.1);
 }
-header{
-    height: calc(100vh - 70px);
-}
-.container{
+
+.header__container{
     display: flex;
     align-items: center;justify-content: center;
+    flex-direction: column;
 }
-.row{
+.header__container{
     width: 100%;
-    max-width: 900px;
-
+    max-width: 700px;
+    height: 100%;
+    margin: 0 auto;
+}
+h1{
+    font-size: 56px;
+}
+.text--purple{
+    color: #7342d6;
+}
+.header__button{
+    background-color: #7342d6;
+    color: #fff;
+    padding:  8px 12px;
+    width: fit-content;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+h1,h2{
+    margin-bottom: 16px;
+    text-align: center;
 }
