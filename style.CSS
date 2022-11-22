@@ -58,7 +58,7 @@ h2{
     text-decoration: none;
 }
 /*landing-page*/
-#landing{
+#landing, #more{
 background-color: rgba(115, 66, 214,0.1);
 }
 
@@ -205,6 +205,7 @@ height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 .book:hover .book__img{
     scale: 1.05;
@@ -234,4 +235,24 @@ height: 100vh;
 }
 .book__price--sale{
     color: rgb(234, 75, 75);
+}
+/* more */
+#more{
+    padding: 30px;
+    height: 300px;
+
+}
+.more__button--wrap{
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+.more__button{
+    padding: 8px 16px;
+    background-color: #7342d6;
+    border-radius: 4px;
+    border-style: none;
+    color: #fff;
+    font-size:20px ;
 }
