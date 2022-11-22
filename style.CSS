@@ -9,6 +9,12 @@
 li{
     list-style-type: none;
 }
+a:hover{
+    text-decoration: underline;
+}
+html{
+    scroll-behavior: smooth;
+}
 
 /*nav*/
 
@@ -255,4 +261,36 @@ height: 100vh;
     border-style: none;
     color: #fff;
     font-size:20px ;
+    cursor: pointer;
 }
+/* footer */
+    footer{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #242424;
+    }
+    .footer__link{
+        color: #fff;
+    }
+    a{
+        text-decoration: none;
+    }
+    .footer__copyright{
+        color: #fff;
+        font-weight: 400;
+        font-size: 16px;
+    }
+    .footer__logo--img{
+        width: 180px;
+        filter: grayscale(1) invert(1);
+        margin-bottom: 10px;
+    }
+    .footer__links{
+        width: 100%;
+        max-width: 700px;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
