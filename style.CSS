@@ -9,10 +9,13 @@
 li{
     list-style-type: none;
 }
+
 /*nav*/
+
 nav {
     height: 70px;
     display: flex;
+
 }
 h1{
     font-size: 48px;
@@ -28,6 +31,7 @@ h2{
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 24px;
+    padding: 5px;
 
 }
 .nav__links{
@@ -185,6 +189,49 @@ height: 100vh;
 }
 /* features */
 #features{
-    height: 1000px;
+    height: 800px;
+    padding-top: 8vw;
     background-color: rgba(115, 66, 214,0.1)
+}
+.book__img{
+    max-height:300px ;
+    margin-bottom: 10px;
+    transition: all 300ms ease;
+}
+.features__title{
+    margin: 40px 0px;
+}
+.books{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.book:hover .book__img{
+    scale: 1.05;
+}
+.book{
+    width: 25%;
+    padding: 20px;
+}
+.book__title{
+    font-size: 18px;
+    font-weight: 400;
+    transition: all 300ms ease;
+}
+
+.book__title:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.book__rating{
+    margin-bottom: 8px;
+    color: #fabf2a;
+}
+.book__price--normal{
+    text-decoration: line-through;
+    color: grey;
+    padding-right: 6px;
+}
+.book__price--sale{
+    color: rgb(234, 75, 75);
 }
