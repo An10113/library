@@ -63,6 +63,9 @@ h2{
 .nav__link--primary:hover{
     text-decoration: none;
 }
+.no__cursor{
+    cursor: none;
+}
 /*landing-page*/
 #landing, #more{
 background-color: rgba(115, 66, 214,0.1);
