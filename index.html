@@ -10,6 +10,8 @@
       src="https://kit.fontawesome.com/52945062b0.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./index.js">
+    </script>
   </head>
   <body>
     <section id="landing">
@@ -19,23 +21,28 @@
           <ul class="nav__links">
             <li><a href="" class="nav__link">Home</a></li>
             <li><a href="" class="nav__link">Contact</a></li>
-            <li><a href="#features" class="nav__link nav__link--primary">Books</a></li>
+            <li>
+              <a href="#features" class="nav__link nav__link--primary">Books</a>
+            </li>
           </ul>
-          <button class="btn__menu">
-           <i class="fas fa-bars"></i>
+          <button class="btn__menu" onclick="openMenu()">
+            <i class="fas fa-bars"></i>
           </button>
           <div class="menu__backdrop">
-            <button class="btn__menu btn__menu--close">
-              <i class="fas fa-times">
-                <ul>
-                  <li class="menu__list">
-                    <a href="">Home</a>
-                    <a href="#features">books</a>
-                    <a href="">Contact</a>
-                  </li>
-                </ul>
-              </i>
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+              <i class="fas fa-times"> </i>
             </button>
+            <ul class="menu__links">
+              <li class="menu__list" onclick="closeMenu()">
+                <a href="" class="menu__link">Home</a>
+              </li>
+              <li class="menu__list" onclick="closeMenu()">
+                <a href="#features" class="menu__link">books</a>
+              </li>
+              <li class="menu__list" onclick="closeMenu()">
+                <a href="" class="menu__link">Contact</a>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
@@ -103,15 +110,19 @@
       <section id="features">
         <div class="container">
           <div class="row">
-            <h2 class="features__title">Features <span class="text--purple"> books</span></h2>
+            <h2 class="features__title">
+              Features <span class="text--purple"> books</span>
+            </h2>
             <div class="books">
               <div class="book">
-                <figure>
-                  <img class="book__img" src="./assets/crack the coding interview.png" alt="" />
+                <figure class="book__img--wrap">
+                  <img
+                    class="book__img"
+                    src="./assets/crack the coding interview.png"
+                    alt=""
+                  />
                 </figure>
-                <div class="book__title">
-                  Cracking the coding interview
-                </div>
+                <div class="book__title">Cracking the coding interview</div>
                 <div class="book__rating">
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
@@ -126,11 +137,13 @@
               </div>
               <div class="book">
                 <figure>
-                  <img class="book__img" src="./assets/atomic habits.jpg" alt="" />
+                  <img
+                    class="book__img"
+                    src="./assets/atomic habits.jpg"
+                    alt=""
+                  />
                 </figure>
-                <div class="book__title">
-                  Atomic habits
-                </div>
+                <div class="book__title">Atomic habits</div>
                 <div class="book__rating">
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
@@ -145,11 +158,13 @@
               </div>
               <div class="book">
                 <figure>
-                  <img class="book__img" src="./assets/david goggins.jpeg" alt="" />
+                  <img
+                    class="book__img"
+                    src="./assets/david goggins.jpeg"
+                    alt=""
+                  />
                 </figure>
-                <div class="book__title">
-                  Can't hurt me
-                </div>
+                <div class="book__title">Can't hurt me</div>
                 <div class="book__rating">
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
@@ -166,9 +181,7 @@
                 <figure>
                   <img class="book__img" src="./assets/deep work.jpeg" alt="" />
                 </figure>
-                <div class="book__title">
-                  Deep work
-                </div>
+                <div class="book__title">Deep work</div>
                 <div class="book__rating">
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
@@ -188,15 +201,15 @@
       <section id="latest-books">
         <div class="container">
           <div class="row">
-            <h2 class="features__title">Latest <span class="text--purple"> books</span></h2>
+            <h2 class="features__title">
+              Latest <span class="text--purple"> books</span>
+            </h2>
             <div class="books">
               <div class="book">
                 <figure>
                   <img class="book__img" src="./assets/book-2.jpeg" alt="" />
                 </figure>
-                <div class="book__title">
-                  Be obsessed
-                </div>
+                <div class="book__title">Be obsessed</div>
                 <div class="book__rating">
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
@@ -213,9 +226,7 @@
                 <figure>
                   <img class="book__img" src="./assets/book-3.jpeg" alt="" />
                 </figure>
-                <div class="book__title">
-                  Rich dad poor dad
-                </div>
+                <div class="book__title">Rich dad poor dad</div>
                 <div class="book__rating">
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
@@ -232,9 +243,7 @@
                 <figure>
                   <img class="book__img" src="./assets/book-4.jpeg" alt="" />
                 </figure>
-                <div class="book__title">
-                  Cashflow quadrant
-                </div>
+                <div class="book__title">Cashflow quadrant</div>
                 <div class="book__rating">
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
@@ -251,9 +260,7 @@
                 <figure>
                   <img class="book__img" src="./assets/book-1.jpeg" alt="" />
                 </figure>
-                <div class="book__title">
-                  The 10x rules
-                </div>
+                <div class="book__title">The 10x rules</div>
                 <div class="book__rating">
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
@@ -270,9 +277,7 @@
                 <figure>
                   <img class="book__img" src="./assets/book-5.jpeg" alt="" />
                 </figure>
-                <div class="book__title">
-                  P O W E R
-                </div>
+                <div class="book__title">P O W E R</div>
                 <div class="book__rating">
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
@@ -289,9 +294,7 @@
                 <figure>
                   <img class="book__img" src="./assets/book-6.jpeg" alt="" />
                 </figure>
-                <div class="book__title">
-                  5 second rules
-                </div>
+                <div class="book__title">5 second rules</div>
                 <div class="book__rating">
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
@@ -308,9 +311,7 @@
                 <figure>
                   <img class="book__img" src="./assets/book-7.jpg" alt="" />
                 </figure>
-                <div class="book__title">
-                  Your next five moves
-                </div>
+                <div class="book__title">Your next five moves</div>
                 <div class="book__rating">
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
@@ -327,9 +328,7 @@
                 <figure>
                   <img class="book__img" src="./assets/book-8.jpeg" alt="" />
                 </figure>
-                <div class="book__title">
-                  Mastery
-                </div>
+                <div class="book__title">Mastery</div>
                 <div class="book__rating">
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
@@ -349,12 +348,12 @@
       <section id="more">
         <div class="container">
           <div class="row">
-            <h2 class="feature__title">Explore more <span class="text--purple">books</span></h2>
+            <h2 class="feature__title">
+              Explore more <span class="text--purple">books</span>
+            </h2>
             <div class="more__button--wrap">
               <a href="#features">
-                <button class="more__button">
-                  Browse more 
-                </button>
+                <button class="more__button">Browse more</button>
               </a>
             </div>
           </div>
@@ -363,21 +362,19 @@
     </main>
     <footer>
       <div class="footer__logo">
-          <figure>
-            <img src="./assets/Library.svg" alt="" class="footer__logo--img">
-          </figure>
+        <figure>
+          <img src="./assets/Library.svg" alt="" class="footer__logo--img" />
+        </figure>
       </div>
-        <ul class="footer__links">
-            <a href="" class="footer__link">Home</a>
-            <a href="" class="footer__link">About</a>
-            <a href="" class="footer__link">Books</a>
-            <a href="" class="footer__link">Contact</a>
-        </ul>
-        <div class="footer__copyright--wrap">
-          <h3 class="footer__copyright">
-            copyright &copy; 2021 Library
-          </h3>
-        </div>
+      <ul class="footer__links">
+        <a href="" class="footer__link">Home</a>
+        <a href="" class="footer__link">About</a>
+        <a href="" class="footer__link">Books</a>
+        <a href="" class="footer__link">Contact</a>
+      </ul>
+      <div class="footer__copyright--wrap">
+        <h3 class="footer__copyright">copyright &copy; 2021 Library</h3>
+      </div>
     </footer>
   </body>
 </html>
