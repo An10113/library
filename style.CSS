@@ -93,6 +93,7 @@ h1{
     width: fit-content;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
     font-size: 20px;
 }
 h1,h2{
@@ -294,3 +295,8 @@ height: 100vh;
         justify-content: space-around;
         margin-bottom: 20px;
     }
+    .footer__logo{
+        display: flex;
+    }
+    /* media queries */
+    
